@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Integrated Homestay and Travel</title>
+    <style>
+        /* General reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            transition: background 2s ease-in-out;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            animation: fadeIn 2s ease-in-out;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            animation: slideUp 1.5s ease-out;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #fff;
+            display: inline-block;
+            position: relative;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        section p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: justify;
+        }
+
+        .founders {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .founder {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .founder img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+            transition: transform 0.3s ease;
+        }
+
+        .founder:hover img {
+            transform: scale(1.1);
+        }
+
+        .founder h3 {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            color: #FFD700;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+        }
+
+        .founder p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            color: #ddd;
+        }
+
+        .contact {
+            margin-top: 2rem;
+            text-align: center;
+            animation: slideUp 1.5s ease-out;
+        }
+
+        .contact p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .places {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+        }
+
+        .place {
+            text-align: center;
+            max-width: 300px;
+            position: relative;
+        }
+
+        .place img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease;
+        }
+
+        .place:hover img {
+            transform: scale(1.1);
+        }
+
+        .place h3 {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            color: #FFD700;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+        }
+
+        .place p {
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Add animated background */
+        @keyframes gradientBackground {
+            0% {
+                background: linear-gradient(to right, #ff7e5f, #feb47b);
+            }
+            25% {
+                background: linear-gradient(to right, #6a11cb, #2575fc);
+            }
+            50% {
+                background: linear-gradient(to right, #ff6a00, #ee0979);
+            }
+            75% {
+                background: linear-gradient(to right, #00c6ff, #0072ff);
+            }
+            100% {
+                background: linear-gradient(to right, #ff7e5f, #feb47b);
+            }
+        }
+
+        /* Set the animation for body */
+        body {
+            animation: gradientBackground 15s ease infinite;
+        }
+
+        /* Particle animation */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 215, 0, 0.8);
+            border-radius: 50%;
+            animation: floatParticles 10s infinite;
+        }
+
+        @keyframes floatParticles {
+            0% { transform: translateX(0) translateY(0); opacity: 1; }
+            100% { transform: translateX(100vw) translateY(100vh); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <p>Your gateway to integrated homestay and travel experiences</p>
+    </header>
+
+    <section>
+        <h2>Our Story</h2>
+        <p>Welcome to our Integrated Homestay and Travel Booking Platform! We are passionate about connecting travelers with unique homestay experiences and comprehensive travel packages. Our mission is to provide seamless planning and booking solutions to make every trip memorable. From cozy homestays to curated travel itineraries, we aim to cater to every travel enthusiast's needs with a personal touch.</p>
+
+        <div class="founders">
+            <div class="founder">
+                <img src="HD-wallpaper-mountains-sharp-peaks-rocks-summer-graphy.jpg" alt="Mountain">
+                <h3>Ankit Raj</h3>
+                <p>Co-Founder</p>
+            </div>
+            <div class="founder">
+                <img src="south-pacific-beaches-800x500-paddle-boarding-LIZARD-AIS-1.jpg" alt="Beach">
+                <h3>Dwaipayan Halder</h3>
+                <p>Co-Founder</p>
+            </div>
+            <div class="founder">
+                <img src="Mexico_City_Reforma_Street.jpg" alt="City">
+                <h3>Gaurav Joshi</h3>
+                <p>Co-Founder</p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: contact@homestaytravel.com</p>
+            <p>Phone: +91 9876543210</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Explore Our Favorite Destinations</h2>
+        <div class="places">
+            <div class="place">
+                <img src="La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2).jpg" alt="Paris">
+                <h3>Paris</h3>
+                
+            </div>
+            <div class="place">
+                <img src="tokyo-general1.webp" alt="Tokyo">
+                <h3>Tokyo</h3>
+                
+            </div>
+            <div class="place">
+                <img src="sydney-things-to-do-800x500-Sydney-Opera-House-8.jpg" alt="Sydney">
+                <h3>Sydney</h3>
+               
+            </div>
+        </div>
+    </section>
+
+    <div class="particles">
+        <!-- Generate particles -->
+        <div class="particle" style="animation-delay: 0s; top: 10%; left: 20%;"></div>
+        <div class="particle" style="animation-delay: 2s; top: 50%; left: 60%;"></div>
+        <div class="particle" style="animation-delay: 4s; top: 80%; left: 40%;"></div>
+        <div class="particle" style="animation-delay: 6s; top: 30%; left: 80%;"></div>
+    </div>
+
+    <script>
+        // Generate particles dynamically in JavaScript
+        for (let i = 0; i < 20; i++) {
+            let particle = document.createElement('div');
+            particle.classList.add('particle');
+            particle.style.left = `${Math.random() * 100}vw`;
+            particle.style.top = `${Math.random() * 100}vh`;
+            particle.style.animationDelay = `${Math.random() * 5}s`;
+            document.querySelector('.particles').appendChild(particle);
+        }
+    </script>
+</body>
+</html>

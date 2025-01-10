@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmoothStay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #141212;
+        }
+
+        header {
+            
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .about-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .about-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #4caf50;
+        }
+
+        .about-section p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin: 0 0 20px;
+        }
+
+        .about-section img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .reasons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .reason {
+            background-color: white;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+            min-width: 280px;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .reason:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .reason img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+
+        .reason h3 {
+            color: #4caf50;
+            margin-bottom: 10px;
+        }
+
+        .reason p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        .highlight {
+            color: #ff5722;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to SmoothStay</h1>
+    </header>
+
+    <div class="container">
+        <div class="about-section">
+            <h2>Our Mission</h2>
+            <p>We are dedicated to making your homestay and hotel booking experience <span class="highlight">simple</span>, <span class="highlight">efficient</span>, and <span class="highlight">hassle-free</span>. At SmoothStay, our mission is to connect travelers with the best accommodations, ensuring every trip is memorable and comfortable.</p>
+            <img src="HD-wallpaper-mountains-sharp-peaks-rocks-summer-graphy.jpg" alt="Beautiful destinations">
+        </div>
+
+        <div class="about-section">
+            <h2>Why Choose Us?</h2>
+        </div>
+
+        <div class="reasons">
+            <div class="reason">
+                <img src="Mexico_City_Reforma_Street.jpg" alt="Wide Selection">
+                <h3>Wide Selection</h3>
+                <p>Explore a vast range of homestays and hotels tailored to suit all budgets and preferences.</p>
+            </div>
+            <div class="reason">
+                <img src="https://via.placeholder.com/100" alt="Seamless Booking">
+                <h3>Seamless Booking</h3>
+                <p>Enjoy a user-friendly platform designed to make your booking process smooth and secure.</p>
+            </div>
+            <div class="reason">
+                <img src="https://via.placeholder.com/100" alt="Customer Support">
+                <h3>24/7 Customer Support</h3>
+                <p>Our dedicated support team is always ready to assist you, ensuring a worry-free experience.</p>
+            </div>
+            <div class="reason">
+                <img src="https://via.placeholder.com/100" alt="Best Price">
+                <h3>Best Price Guarantee</h3>
+                <p>We offer competitive pricing with no hidden fees, ensuring you get the best value for your money.</p>
+            </div>
+            <div class="reason">
+                <img src="https://via.placeholder.com/100" alt="Trusted Partners">
+                <h3>Trusted Partners</h3>
+                <p>Collaborating with reputable accommodation providers to guarantee quality and reliability.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SmoothStay. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("Welcome to SmoothStay - Your journey starts here!");
+        });
+    </script>
+</body>
+</html>
