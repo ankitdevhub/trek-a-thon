@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Homestay</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Google Maps API with additional Libraries (Places, Street View) -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiL4ztuHKuIjbie3sCRYHqSiOFZrEPmIU&libraries=places&callback=initMap" async defer></script>
+</head>
+<body>
+    <h1>Travel & Homestay Locator</h1>
+    <div id="controls">
+        <input type="text" id="search-box" placeholder="Enter a location">
+        <button id="search-btn">Search</button>
+        <select id="view-selector">
+            <option value="roadmap">Roadmap</option>
+            <option value="satellite">Satellite</option>
+            <option value="terrain">Terrain</option>
+        </select>
+    </div>
+    <div id="map"></div>
+    <div id="street-view"></div>
+    <div id="place-info">
+        <h3>Place Information</h3>
+        <div id="place-reviews"></div>
+        <div id="place-photos"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
